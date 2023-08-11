@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="task-container">
+    <h2>Трекер заданий</h2>
+    <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Добавьте новую задачу..">
+        <button id="createTaskBtn">Создать</button>
+    </div>
+    <div class="task-list" id="tasks"></div>
+    <div class="button-container">
+        <button id="deleteSelectedBtn">Удалить выбранное</button>
+        <label><input type="checkbox" id="selectAllCheckbox">Выбрать всё</label>
+        <button id="viewTrashBtn">Корзина</button>
+    </div>
+</div>
+<div id="trashContainer" class="hidden">
+    <h2>Корзина</h2>
+    <button id="restoreTasksBtn">Восстановить все</button>
+    <div id="trashTasks"></div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
